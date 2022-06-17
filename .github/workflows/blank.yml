@@ -56,7 +56,11 @@ jobs:
       run: |
         git clone --depth 1 $REPO_URL -b $REPO_BRANCH openwrt
         cd openwrt
-        echo "src-git ssrp https://github.com/fw876/helloworld.git" >> ./feeds.conf.default
+        echo "" > ./feeds.conf.default
+        echo "src-git-full packages http://github.com/openwrt/packages" >> ./feeds.conf.default
+        echo "src-git-full luci http://github.com/openwrt/luci" >> ./feeds.conf.default
+        echo "src-git-full routing http://github.com/openwrt/routing" >> ./feeds.conf.default
+        echo "src-git-full telephony http://github.com/openwrt/telephony" >> ./feeds.conf.default
         
     - name: 更新并安装内容聚合
       working-directory: ./openwrt
