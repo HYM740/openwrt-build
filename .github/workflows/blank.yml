@@ -1,3 +1,4 @@
+name: '使用测试内核（5.15）构建openwrt'
 on: 
   #release:
   #  types: [published]
