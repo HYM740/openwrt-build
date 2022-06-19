@@ -57,10 +57,10 @@ jobs:
         git clone --depth 1 $REPO_URL -b $REPO_BRANCH openwrt
         cd openwrt
         echo "" > ./feeds.conf.default
-        echo "src-git-full packages http://github.com/openwrt/packages" >> ./feeds.conf.default
-        echo "src-git-full luci http://github.com/openwrt/luci" >> ./feeds.conf.default
-        echo "src-git-full routing http://github.com/openwrt/routing" >> ./feeds.conf.default
-        echo "src-git-full telephony http://github.com/openwrt/telephony" >> ./feeds.conf.default
+        echo "src-git-full packages https://github.com/openwrt/packages" >> ./feeds.conf.default
+        echo "src-git-full luci https://github.com/openwrt/luci" >> ./feeds.conf.default
+        echo "src-git-full routing https://github.com/openwrt/routing" >> ./feeds.conf.default
+        echo "src-git-full telephony https://github.com/openwrt/telephony" >> ./feeds.conf.default
         
     - name: 更新并安装内容聚合
       working-directory: ./openwrt
