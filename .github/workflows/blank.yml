@@ -85,8 +85,8 @@ jobs:
     - name: 编译固件
       working-directory: ./openwrt
       run: |
-        echo -e "使用$(nproc)线程编译。"
-        make -j$(nproc)
+        # echo -e "使用$(nproc)线程编译。"
+        make -j1 V=s
     - name : 上传工件
       uses: actions/upload-artifact@master
       with:
