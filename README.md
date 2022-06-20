@@ -1,6 +1,5 @@
 # openwrt构建
-
-[![使用配置文件x86_64构建openwrt](https://github.com/HYM740/openwrt-build/actions/workflows/blank.yml/badge.svg)](https://github.com/HYM740/openwrt-build/actions/workflows/blank.yml)
+[![x86_64构建openwrt](https://github.com/HYM740/openwrt-build/actions/workflows/blank.yml/badge.svg?event=workflow_dispatch)](https://github.com/HYM740/openwrt-build/actions/workflows/blank.yml)
 
 使用Github Actions提供的服务进行构建openwrt
 
