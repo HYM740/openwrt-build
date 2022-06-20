@@ -1,4 +1,4 @@
-name: '使用配置文件x86_64构建openwrt'
+name: 'openwrt x86_64'
 on: 
   #release:
   #  types: [published]
